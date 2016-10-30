@@ -35,3 +35,54 @@ ul li {
 .red-text {
     color: #f0626e;
 }
+
+@font-face {
+    font-family: Aparajita;
+    src: url('/fonts/aparaj.ttf') format("truetype");
+}
+
+.gift-block {
+    width: 51px;
+    background: #00a1be;
+}
+
+.cart-block {
+    width: 51px;
+    background: #f0626e;
+}
+
+.price-block {
+    flex-grow: 1;
+    align-items: center;  
+    background: #323232;
+}
+
+.price-block > div:before {
+    content: "$ ";
+    line-height: 18px;
+    vertical-align: 2px;
+}
+
+.price-block .price-value{
+    font-size:  24.45px;
+}
+
+.price-block .price-value sup{
+    vertical-align: 8px;
+}
+
+.block-panel {
+    display: flex;
+}
+
+.block-panel .block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -2,6 +2,7 @@ const HTML_PATH = __dirname + "/src/html/";
 const CSS_PATH = __dirname + "/src/css/";
 const SPRITES_PATH = __dirname + "/src/sprites/";
 const IMAGES_PATH = __dirname + "/src/images/";
+const FONTS_PATH = __dirname + "/src/fonts/";
 
 const OUTPUT_PATH = __dirname + "/build";
 const TEMP_PATH = __dirname + "/tmp/";
@@ -30,6 +31,11 @@ module.exports = function(grunt) {
                     cwd: IMAGES_PATH,
                     src: "**",
                     dest: OUTPUT_PATH + "/images"
+                }, {
+                    expand: true,
+                    cwd: FONTS_PATH,
+                    src: "**",
+                    dest: OUTPUT_PATH + "/fonts"
                 }]
             }
         },
@@ -47,6 +53,7 @@ module.exports = function(grunt) {
                             HTML_PATH + "page_start.html",
                             HTML_PATH + "header.html",
                             HTML_PATH + "navigation.html",
+                            HTML_PATH + "slider.html",
                             HTML_PATH + "page_end.html",
                         ],
                         nonull: true
@@ -62,6 +69,7 @@ module.exports = function(grunt) {
                             TEMP_PATH + "sprites.css",
                             CSS_PATH + "main.css",
                             CSS_PATH + "header.css",
+                            CSS_PATH + "slider.css",
                             CSS_PATH + "navigation.css",
                         ],
                         nonull: true
