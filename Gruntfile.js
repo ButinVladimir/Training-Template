@@ -54,6 +54,8 @@ module.exports = function(grunt) {
                             HTML_PATH + "header.html",
                             HTML_PATH + "navigation.html",
                             HTML_PATH + "slider.html",
+                            HTML_PATH + "new_products.html",
+                            HTML_PATH + "featured_products.html",
                             HTML_PATH + "page_end.html",
                         ],
                         nonull: true
@@ -71,6 +73,7 @@ module.exports = function(grunt) {
                             CSS_PATH + "header.css",
                             CSS_PATH + "slider.css",
                             CSS_PATH + "navigation.css",
+                            CSS_PATH + "products.css",
                         ],
                         nonull: true
                     }
