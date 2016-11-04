@@ -6,6 +6,10 @@
     font-size: 16px;
 }
 
+button {
+    cursor: pointer;
+}
+
 .container {
     margin: 0 auto 0 auto;
     width: 1170px;
@@ -20,35 +24,16 @@ ul li {
     list-style-type: none;
 }
 
-.blue-bg {
-    background: #05aecc;
-}
-
-.red-bg {
-    background: #f0626e;
-}
-
-.blue-text {
-    color: #05aecc;
-}
-
-.red-text {
-    color: #f0626e;
-}
-
-@font-face {
-    font-family: Aparajita;
-    src: url('/fonts/aparaj.ttf') format("truetype");
-}
-
 .gift-block {
     width: 51px;
     background: #00a1be;
+    cursor: pointer;
 }
 
 .cart-block {
     width: 51px;
     background: #f0626e;
+    cursor: pointer;
 }
 
 .price-block {
@@ -86,4 +71,65 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.blue-bg {
+    background: #05aecc;
+}
+
+.red-bg {
+    background: #f0626e;
+}
+
+.blue-text {
+    color: #05aecc;
+}
+
+.red-text {
+    color: #f0626e;
+}
+
+.section .section-header {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.section .section-header .space {
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.section .section-header .left-space {
+    width: 28px;
+}
+
+.section .section-header .mid-space {
+    flex-grow: 1;
+}
+
+.section .section-header .title {
+    color: #00a1be;
+    border-bottom: 1px solid #f0626e;
+    padding-left: 3px;
+    padding-right: 16px;
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 500;
+}
+
+.section .section-header .button {
+    width: 70px;
+    height: 79px;
+    background: #3c3c3c;
+    cursor: pointer;
+}
+
+.section .section-header .next-button {
+    margin-left: 1px;
+}
+
+.section .section-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }

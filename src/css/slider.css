@@ -31,6 +31,10 @@
     position: relative;
 }
 
+.slider .img-block > img {
+    cursor: pointer;
+}
+
 .slider .text-block {
     background: rgba(54, 42, 79, 0.8);
     position: absolute;
@@ -143,6 +147,7 @@
 .slider .search-box .search {
     margin-left: 21px;
     background: transparent;
+    cursor: pointer;
 }
 
 .slider .crafts .text-block {
@@ -156,6 +161,49 @@
     width: 203px;
     font-size: 30px;
     text-transform: uppercase;
+}
+
+.slider .crafts .cart-block {
+    position: relative;
+}
+
+.slider .crafts .cart-block .hint {
+    display: none;
+    position: absolute;
+    bottom: 38px;
+    left: 50%;
+    margin-left: -55px;
+}
+
+.slider .crafts .cart-block:hover .hint {
+    display: block;
+}
+
+.slider .crafts .cart-block .hint .hint-container {
+    border: 1px solid #f0626e;
+    border-radius: 4px;
+    background: white;
+    color: #434343;
+    height: 27px;
+    width: 109px;
+}
+
+.slider .crafts .cart-block .hint .arrow-container .arrow-container2 {
+    position: relative;
+}
+
+.slider .crafts .cart-block .hint .arrow-container .arrow {
+    border-top: 10px solid #f0626e;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.slider .crafts .cart-block .hint .arrow-container .arrow-bg {
+    position: relative;
+    top: -11px;
+    border-top: 9px solid white;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
 }
 
 .slider .jewelry .text-block {
@@ -178,6 +226,7 @@
     width: 97px;
     height: 86px;
     position: absolute;
+    cursor: pointer;
 }
 
 .slider .jewelry .button-container .button {

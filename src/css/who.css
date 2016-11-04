@@ -1,0 +1,57 @@
+.who {
+    margin-top: 32px;
+}
+
+.who .description {
+    padding: 27px 23px 27px 26px;
+}
+
+.who .description .text {
+    line-height: 27px;
+}
+
+.who .section-content .step {
+    width: 370px;
+    height: 232px;
+    cursor: pointer;
+}
+
+.who .section-content .step .img {
+    margin-top: 9px;
+}
+
+.who .section-content .step .caption {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.who .section-content .step:nth-child(1) {
+    background: #434343;
+}
+
+.who .section-content .step:nth-child(1) .caption {
+    margin-left: 26px;
+    
+}
+
+.who .section-content .step:nth-child(2) .caption {
+    margin-left: 26px;
+}
+
+.who .section-content .step:nth-child(3) .caption {
+    margin-left: 20px;
+}
+
+.who .register-container {
+    margin-top: 31px;
+}
+
+.who .register-container .register {
+    color: white;
+    width: 648px;
+    height: 61px;
+    font-size: 27.5px;
+    cursor: pointer;
+}

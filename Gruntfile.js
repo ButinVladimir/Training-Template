@@ -2,7 +2,6 @@ const HTML_PATH = __dirname + "/src/html/";
 const CSS_PATH = __dirname + "/src/css/";
 const SPRITES_PATH = __dirname + "/src/sprites/";
 const IMAGES_PATH = __dirname + "/src/images/";
-const FONTS_PATH = __dirname + "/src/fonts/";
 
 const OUTPUT_PATH = __dirname + "/build";
 const TEMP_PATH = __dirname + "/tmp/";
@@ -31,11 +30,6 @@ module.exports = function(grunt) {
                     cwd: IMAGES_PATH,
                     src: "**",
                     dest: OUTPUT_PATH + "/images"
-                }, {
-                    expand: true,
-                    cwd: FONTS_PATH,
-                    src: "**",
-                    dest: OUTPUT_PATH + "/fonts"
                 }]
             }
         },
@@ -56,6 +50,8 @@ module.exports = function(grunt) {
                             HTML_PATH + "slider.html",
                             HTML_PATH + "new_products.html",
                             HTML_PATH + "featured_products.html",
+                            HTML_PATH + "who.html",
+                            HTML_PATH + "footer.html",
                             HTML_PATH + "page_end.html",
                         ],
                         nonull: true
@@ -74,6 +70,8 @@ module.exports = function(grunt) {
                             CSS_PATH + "slider.css",
                             CSS_PATH + "navigation.css",
                             CSS_PATH + "products.css",
+                            CSS_PATH + "who.css",
+                            CSS_PATH + "footer.css",
                         ],
                         nonull: true
                     }
