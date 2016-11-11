@@ -55,6 +55,7 @@
 .footer .footer-content .column .subscribe-container .email input {
     text-transform: uppercase;
     font-size: 14px;
+    width: 12em;
 }
 
 .footer .footer-content .column .subscribe-container .subscribe {
