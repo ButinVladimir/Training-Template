@@ -1,9 +1,9 @@
 *, body, html {
-    margin: 0;
-    padding: 0;
     border: 0;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 button {
@@ -20,26 +20,26 @@ a, a:hover, a:visited {
 }
 
 ul li {
-    text-decoration: none;
     list-style-type: none;
+    text-decoration: none;
 }
 
 .gift-block {
-    width: 51px;
     background: #00a1be;
     cursor: pointer;
+    width: 51px;
 }
 
 .cart-block {
-    width: 51px;
     background: #f0626e;
     cursor: pointer;
+    width: 51px;
 }
 
 .price-block {
-    flex-grow: 1;
     align-items: center;  
     background: #323232;
+    flex-grow: 1;
 }
 
 .price-block > div:before {
@@ -61,15 +61,15 @@ ul li {
 }
 
 .block-panel .block {
-    display: flex;
     align-items: center;
-    justify-content: center;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .center {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
 }
 
@@ -90,8 +90,8 @@ ul li {
 }
 
 .section .section-header {
-    display: flex;
     align-items: flex-end;
+    display: flex;
     width: 100%;
 }
 
@@ -108,20 +108,20 @@ ul li {
 }
 
 .section .section-header .title {
-    color: #00a1be;
     border-bottom: 1px solid #f0626e;
+    color: #00a1be;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 43px;
     padding-left: 3px;
     padding-right: 16px;
-    font-size: 30px;
-    line-height: 43px;
-    font-weight: 500;
 }
 
 .section .section-header .button {
-    width: 70px;
-    height: 79px;
     background: #3c3c3c;
     cursor: pointer;
+    height: 79px;
+    width: 70px;
 }
 
 .section .section-header .next-button {

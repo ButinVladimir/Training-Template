@@ -4,8 +4,8 @@
 
 .slider .aparajita {
     font-family: 'Aparajita', sans-serif;
+    letter-spacing: 0;
     text-transform: uppercase;
-    letter-spacing: 0px;
 }
 
 .slider .row {
@@ -36,24 +36,24 @@
 }
 
 .slider .text-block {
-    background: rgba(54, 42, 79, 0.8);
-    position: absolute;
+    background: rgba(54, 42, 79, .8);
     color: white;
+    position: absolute;
 }
 
 .slider .men .text-block {
-    width: 348px;
-    display: flex;
     box-sizing: border-box;
+    display: flex;
+    width: 348px;
 }
 
 .slider .men .header {
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    top: 410px;
+    flex-direction: column;
     height: 105px;
+    justify-content: center;
     padding-left: 21px;
+    top: 410px;
 }
 
 .slider .men .header h4 {
@@ -64,29 +64,30 @@
 
 .slider .men .header p {
     font-size: 13px;
-    text-transform: uppercase;   
-    letter-spacing: 0.35px;
+    letter-spacing: .35px;
     line-height: 15px;
+    text-transform: uppercase;
 }
 
 .slider .men .text {
-    top: 517px;
-    height: 41px;
-    font-size: 20px;
+    background: rgba(239, 89, 102, .88);
     flex-direction: column;
-    letter-spacing: 0.5px;
-    background: rgba(239, 89, 102, 0.88);
+    font-size: 20px;
+    height: 41px;
+    letter-spacing: .5px;
+    top: 517px;
 }
 
 .slider .women .text-block {
-    top: 229px;
-    width: 267px;
-    height: 83px;
+    align-items: flex-start;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    height: 83px;
     justify-content: center;
-    align-items: flex-start;
     padding-left: 15px;
+    top: 229px;
+    width: 282px;
 }
 
 .slider .women .text-block h4 {
@@ -97,17 +98,17 @@
 
 .slider .women .text-block p {
     font-size: 12px;
-    text-transform: uppercase;   
-    letter-spacing: 0px;
+    letter-spacing: 0;
     line-height: 14px;
     padding-left: 2px;
+    text-transform: uppercase;
  }
  
 .slider .kids .text-block {
+    height: 55px;
     left: 202px;
     top: 162px;
     width: 292px;
-    height: 55px;
 }
 
 .slider .kids .text {
@@ -115,9 +116,9 @@
 }
 
 .slider .kids .price {
-    flex-grow: 1;
     align-items: center;  
     background: #323232;
+    flex-grow: 1;
 }
 
 .slider .kids .price .price-value {
@@ -125,42 +126,42 @@
 }
 
 .slider .search-box {
-    width: 670px;
     height: 171px;
     letter-spacing: 1.3px;
+    width: 670px;
 }
 
 .slider .search-box .rectangle {
-    width: 485px;
-    height: 71px;
     background: #fff;
-    display: flex;
     box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.25    );
+    display: flex;
+    height: 71px;
+    width: 485px;
 }
 
 .slider .search-box .rectangle .input {
     flex-grow: 1;
-    width: 217px;
     letter-spacing: 1.3px;
+    width: 217px;
 }
 
 .slider .search-box .search {
-    margin-left: 21px;
     background: transparent;
     cursor: pointer;
+    margin-left: 21px;
 }
 
 .slider .crafts .text-block {
-    right: 0;
     bottom: 3px;
-    width: 409px;
     height: 55px;
+    right: 0;
+    width: 409px;
 }
 
 .slider .crafts .text-block .text {
-    width: 203px;
     font-size: 30px;
     text-transform: uppercase;
+    width: 203px;
 }
 
 .slider .crafts .cart-block {
@@ -168,11 +169,11 @@
 }
 
 .slider .crafts .cart-block .hint {
-    display: none;
-    position: absolute;
     bottom: 38px;
+    display: none;
     left: 50%;
     margin-left: -55px;
+    position: absolute;
 }
 
 .slider .crafts .cart-block:hover .hint {
@@ -180,12 +181,13 @@
 }
 
 .slider .crafts .cart-block .hint .hint-container {
+    background: white;
     border: 1px solid #f0626e;
     border-radius: 4px;
-    background: white;
+    box-sizing: border-box;
     color: #434343;
-    height: 27px;
-    width: 109px;
+    height: 29px;
+    width: 111px;
 }
 
 .slider .crafts .cart-block .hint .arrow-container .arrow-container2 {
@@ -193,40 +195,40 @@
 }
 
 .slider .crafts .cart-block .hint .arrow-container .arrow {
-    border-top: 10px solid #f0626e;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
+    border-top: 10px solid #f0626e;
 }
 
 .slider .crafts .cart-block .hint .arrow-container .arrow-bg {
-    position: relative;
-    top: -11px;
-    border-top: 9px solid white;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
+    border-top: 9px solid white;
+    position: relative;
+    top: -11px;
 }
 
 .slider .jewelry .text-block {
-    right: -309px;
-    bottom: -83px;
-    width: 396px;
-    height: 87px;
-    font-size: 64px;
-	transform: rotate(-90deg);
-	transform-origin: left top 0;
-    display: flex;
     align-items: flex-end;
-    padding-left: 24px;
+    bottom: -83px;
     box-sizing: border-box;
+    display: flex;
+    font-size: 64px;
+    height: 87px;
+    padding-left: 24px;
+    right: -309px;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    width: 396px;
 }
 
 .slider .jewelry .button-container {
+    cursor: pointer;
+    height: 86px;
+    position: absolute;
     right: 0;
     top: 132px;
     width: 97px;
-    height: 86px;
-    position: absolute;
-    cursor: pointer;
 }
 
 .slider .jewelry .button-container .button {
@@ -235,9 +237,9 @@
 }
 
 .slider .jewelry .button-back {
-    right: 87px;
-    top: 218px;
-    position: absolute;
     border-bottom: 12px solid transparent;
     border-right: 10px solid #c6535d;
+    position: absolute;
+    right: 87px;
+    top: 218px;
 }

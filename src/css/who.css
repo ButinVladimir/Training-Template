@@ -11,9 +11,9 @@
 }
 
 .who .section-content .step {
-    width: 370px;
-    height: 232px;
     cursor: pointer;
+    height: 232px;
+    width: 370px;
 }
 
 .who .section-content .step .img {
@@ -21,9 +21,9 @@
 }
 
 .who .section-content .step .caption {
-    font-size: 30px;
     color: white;
-    letter-spacing: 0.5px;
+    font-size: 30px;
+    letter-spacing: .5px;
     text-align: left;
 }
 
@@ -33,7 +33,6 @@
 
 .who .section-content .step:nth-child(1) .caption {
     margin-left: 26px;
-    
 }
 
 .who .section-content .step:nth-child(2) .caption {
@@ -50,8 +49,8 @@
 
 .who .register-container .register {
     color: white;
-    width: 648px;
-    height: 61px;
-    font-size: 27.5px;
     cursor: pointer;
+    font-size: 27.5px;
+    height: 61px;
+    width: 648px;
 }

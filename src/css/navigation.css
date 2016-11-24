@@ -1,9 +1,9 @@
 .navigation {
-    margin-top: 13px;
-    height: 71px;
     display: flex;
+    height: 71px;
     justify-content: center;
     letter-spacing: 1.2px;
+    margin-top: 13px;
 }
 
 .navigation .navigation-element {
@@ -11,13 +11,13 @@
 }
 
 .navigation .navigation-element .element-title {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
     padding-left: 25px;
     padding-right: 25px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
 }
 
 .navigation .navigation-element:hover .element-title {
@@ -29,8 +29,8 @@
 .navigation .navigation-element .submenu-container {
     display: none;
     position: absolute;
-    z-index: 100;
     top: 71px;
+    z-index: 100;
 }
 
 .navigation .navigation-element:hover .submenu-container {
@@ -38,33 +38,33 @@
 }
 
 .navigation .navigation-element .submenu {
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, .5);
     display: block;
-    top: 5px;
-    position: relative;
-    z-index: 100;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.5);
     padding: 25px 18px 16px 19px;
+    position: relative;
+    top: 5px;
+    z-index: 100;
 }
 
 .navigation .navigation-element .submenu .item{
-    padding: 19px 1px 18px 1px;
     border-bottom: 1px solid #cacaca;
     display: flex;
+    padding: 19px 1px 18px 1px;
 }
 
 .navigation .navigation-element .submenu .item:nth-child(1) {
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .navigation .navigation-element .submenu .item .description {
-    margin-left: 8px;
-    width: 140px;
-    max-width: 100%;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    margin-left: 8px;
+    max-width: 100%;
+    width: 140px;
 }
 
 .navigation .navigation-element .submenu .item .description .title {
@@ -73,22 +73,22 @@
 }
 
 .navigation .navigation-element .submenu .item .description .text {
-    letter-spacing: 0;
     font-size: 14px;
+    letter-spacing: 0;
     line-height: 14px;
     max-width: 100%;
 }
 
 .navigation .navigation-element .submenu .item .description .more {
-    letter-spacing: 0;
-    font-size: 12px;
     color: #fff;
+    font-size: 12px;
+    letter-spacing: 0;
     line-height: 15px;
-    padding: 7px 27px;
     max-width: 100%;
+    padding: 7px 27px;
 }
 
 .navigation .navigation-element .submenu .all-items{
-    margin-top: 12px;
     display: block;
+    margin-top: 12px;
 }

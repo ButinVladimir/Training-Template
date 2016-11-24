@@ -3,9 +3,9 @@
 }
 
 .products .section-header .button {
-    width: 70px;
-    height: 79px;
     background: #3c3c3c;
+    height: 79px;
+    width: 70px;
 }
 
 .products .section-header .next-button {
@@ -30,13 +30,13 @@
 }
 
 .new-products .section-content .image .block-panel {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 292px;
     height: 55px;
+    left: 50%;
     margin-left: -146px;
     margin-top: -27.5px;
+    position: absolute;
+    top: 50%;
+    width: 292px;
 }
 
 .new-products .section-content .image .block-panel .text {
@@ -49,8 +49,8 @@
 }
 
 .featured-products .section-content .product {
-    display: table;
     border: 1px solid #dddddd;
+    display: table;
 }
 
 .featured-products .section-content .product .image-cell {
@@ -58,8 +58,8 @@
 }
 
 .featured-products .section-content .product .description-cell {
-    display: flex;
     align-items: center;
+    display: flex;
     height: 56px;
     padding-left: 14px;
 }
@@ -77,13 +77,13 @@
 }
 
 .featured-products .section-content .product .image-cell .label {
+    color: white;
+    font-size: 14px;
+    height: 34px;
+    letter-spacing: 1px;
     position: absolute;
     top: 12px;
     width: 80px;
-    height: 34px;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 1px;
 }
 
 .featured-products .section-content .product .image-cell > img {

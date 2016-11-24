@@ -3,9 +3,9 @@
 }
 
 .footer .footer-content {
-    margin-top: 55px;
     display: flex;
     justify-content: flex-end;
+    margin-top: 55px;
 }
 
 .footer .footer-content .column:nth-child(1) {
@@ -22,8 +22,8 @@
 
 .footer .footer-content .column .caption {
     font-size: 25px;
-    letter-spacing: 0.6px;
     font-weight: 400;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
 }
 
@@ -41,28 +41,29 @@
 
 
 .footer .footer-content .column .subscribe-container {
-    width: 377px;
-    text-transform: uppercase;
-    margin-top: 40px;
     margin-bottom: 30px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    width: 377px;
 }
 
 .footer .footer-content .column .subscribe-container .email {
-    height: 69px;
     border: 1px solid #dedede;
+    box-sizing: border-box;
+    height: 70px;
 }
 
 .footer .footer-content .column .subscribe-container .email input {
-    text-transform: uppercase;
     font-size: 14px;
+    text-transform: uppercase;
     width: 12em;
 }
 
 .footer .footer-content .column .subscribe-container .subscribe {
-    height: 51px;
     color: white;
-    font-size: 14px;
     cursor: pointer;
+    font-size: 14px;
+    height: 51px;
 }
 
 .footer .footer-content .column .social-container {
@@ -79,22 +80,23 @@
 }
 
 .footer .copyright {
-    margin-top: 58px;
-    margin-bottom: 232px;
-    border-top: 1px solid #b9b9b9;
-    border-bottom: 1px solid #b9b9b9;
-    height: 64px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #b9b9b9;
+    border-top: 1px solid #b9b9b9;
+    box-sizing: border-box;;
+    display: flex;
+    height: 66px;
+    justify-content: space-between;
+    margin-bottom: 232px;
+    margin-top: 58px;
 }
 
 .footer .copyright .copyright-text {
-    margin-left: 21px;
     font-size: 14px;
+    margin-left: 21px;
 }
 
 .footer .copyright .designed-text {
-    margin-right: 9px;
     font-size: 14px;
+    margin-right: 9px;
 }

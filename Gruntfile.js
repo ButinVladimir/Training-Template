@@ -1,10 +1,10 @@
-const HTML_PATH = __dirname + "/src/html/";
-const CSS_PATH = __dirname + "/src/css/";
-const SPRITES_PATH = __dirname + "/src/sprites/";
-const IMAGES_PATH = __dirname + "/src/images/";
+const HTML_PATH = __dirname + '/src/html/';
+const CSS_PATH = __dirname + '/src/css/';
+const SPRITES_PATH = __dirname + '/src/sprites/';
+const IMAGES_PATH = __dirname + '/src/images/';
 
-const OUTPUT_PATH = __dirname + "/build";
-const TEMP_PATH = __dirname + "/tmp/";
+const OUTPUT_PATH = __dirname + '/build';
+const TEMP_PATH = __dirname + '/tmp/';
 
 module.exports = function(grunt) {
     grunt.initConfig({
@@ -28,31 +28,31 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: IMAGES_PATH,
-                    src: "**",
-                    dest: OUTPUT_PATH + "/images"
+                    src: '**',
+                    dest: OUTPUT_PATH + '/images'
                 }]
             }
         },
 
         concat: {
             options: {
-                separator: "\n",
+                separator: '\n',
             },
 
             html: {
                 files: [
                     {
-                        dest: OUTPUT_PATH + "/index.html",
+                        dest: OUTPUT_PATH + '/index.html',
                         src: [
-                            HTML_PATH + "page_start.html",
-                            HTML_PATH + "header.html",
-                            HTML_PATH + "navigation.html",
-                            HTML_PATH + "slider.html",
-                            HTML_PATH + "new_products.html",
-                            HTML_PATH + "featured_products.html",
-                            HTML_PATH + "who.html",
-                            HTML_PATH + "footer.html",
-                            HTML_PATH + "page_end.html",
+                            HTML_PATH + 'page_start.html',
+                            HTML_PATH + 'header.html',
+                            HTML_PATH + 'navigation.html',
+                            HTML_PATH + 'slider.html',
+                            HTML_PATH + 'new_products.html',
+                            HTML_PATH + 'featured_products.html',
+                            HTML_PATH + 'who.html',
+                            HTML_PATH + 'footer.html',
+                            HTML_PATH + 'page_end.html',
                         ],
                         nonull: true
                     }
@@ -62,16 +62,16 @@ module.exports = function(grunt) {
             css: {
                 files: [
                     {
-                        dest: OUTPUT_PATH + "/style.css",
+                        dest: OUTPUT_PATH + '/style.css',
                         src: [
-                            TEMP_PATH + "sprites.css",
-                            CSS_PATH + "main.css",
-                            CSS_PATH + "header.css",
-                            CSS_PATH + "slider.css",
-                            CSS_PATH + "navigation.css",
-                            CSS_PATH + "products.css",
-                            CSS_PATH + "who.css",
-                            CSS_PATH + "footer.css",
+                            TEMP_PATH + 'sprites.css',
+                            CSS_PATH + 'main.css',
+                            CSS_PATH + 'header.css',
+                            CSS_PATH + 'slider.css',
+                            CSS_PATH + 'navigation.css',
+                            CSS_PATH + 'products.css',
+                            CSS_PATH + 'who.css',
+                            CSS_PATH + 'footer.css',
                         ],
                         nonull: true
                     }
@@ -87,15 +87,15 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             sprites: {
-                files: [SPRITES_PATH + "*.*"],
+                files: [SPRITES_PATH + '*.*'],
                 tasks: ['sprite', 'concat:css'],
             },
             html: {
-                files: [HTML_PATH + "*.html"],
+                files: [HTML_PATH + '*.html'],
                 tasks: ['concat:html'],
             },
             css: {
-                files: [CSS_PATH + "*.css"],
+                files: [CSS_PATH + '*.css'],
                 tasks: ['concat:css'],
             }
         },
@@ -110,6 +110,17 @@ module.exports = function(grunt) {
                     hostname: 'localhost'
                 }
             }
+        },
+
+        htmllint: {
+            all: [HTML_PATH + '**/*.html']
+        },
+
+        csslint: {
+            options: {
+                import: false,
+            },
+            src: [CSS_PATH + '**/*.css']
         }
     });
     
@@ -118,9 +129,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-spritesmith');
+    grunt.loadNpmTasks('grunt-html');
 
     grunt.registerTask('build', ['sprite', 'concat', 'copy']);
     grunt.registerTask('work', ['watch']);
     grunt.registerTask('server', ['connect']);
+    grunt.registerTask('lint', ['csslint', 'htmllint']);
 }

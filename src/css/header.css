@@ -4,21 +4,21 @@
 }
 
 .header .logo-container {
-    width: 189px;
     height: 128px;
     position: relative;
+    width: 189px;
 }
 
 .header .logo-container .icon-logo {
-    position: absolute;
     left: 18px;
+    position: absolute;
     top: 19px;
 }
 
 .header .logo-container .copyright {
+    background: rgba(255, 255, 255, .9);
     position: absolute;
     top: 73px;
-    background: rgba(255,255,255,0.9);
     width: 100%;
 }
 
@@ -31,11 +31,11 @@
 }
 
 .header .menu-container .upper-container {
-    height: 37px;
+    align-items: center;
     display: flex;
     flex-direction: row;
+    height: 37px;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .header .menu-container .upper-container .container-element {
@@ -45,16 +45,17 @@
 
 .header .menu-container .lower-container {
     background: #f6f6f6;
-    padding: 1px 0 1px 0;
+    box-sizing: border-box;
     display: flex;
+    height: 92px;
     justify-content: flex-end;
-    height: 90px;
+    padding: 1px 0;
 }
 
 .header .menu-container .lower-container .container-element {
     height: 100%;
-    width: 116px;
     margin-left: 5px;
+    width: 116px;
 }
 
 .header .menu-container .lower-container .container-element.wide {
@@ -62,12 +63,12 @@
 }
 
 .header .menu-container .lower-container .container-element .link {
-    height: 100%;
-    width: 100%;
+    align-items: center;
     color: #ffffff;
     display: flex;
-    align-items: center;
+    height: 100%;
     justify-content: center;
+    width: 100%;
 }
 
 .header .menu-container .lower-container .container-element .icon-gift {
